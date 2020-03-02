@@ -1,0 +1,112 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth  */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+}
+
+/* More info: https://bit.ly/2PsCnzk */
+
+html {
+  -ms-overflow-style: none;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+*::-webkit-scrollbar {
+  /* WebKit */
+  width: 0;
+  height: 0;
+}
+
+*.debug:not(path):not(g) {
+  background: hsla(210, 100%, 50%, 0.5) !important;
+  box-shadow: none !important;
+  color: hsla(210, 100%, 100%, 0.9) !important;
+  outline: solid 0.25rem hsla(210, 100%, 100%, 0.5) !important;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* Remove default padding */
+
+/* Remove list styles on ul, ol elements with a class attribute */
+body,
+html {
+  margin: 0;
+  background: #fff;
+  vertical-align: baseline;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  display: block;
+  max-width: 100%;
+}
+ul[class],
+ol[class] {
+  padding: 0;
+  list-style: none;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+button:focus {
+  outline: none;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
